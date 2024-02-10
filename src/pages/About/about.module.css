@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.about{
+    @apply bg-transparent text-white;
+}
+.about_title{
+    @apply  flex justify-between items-center  ;
+
+}
+.about_title img{
+    @apply w-[80%];
+
+}
+
+
+.about_description{
+    @apply pt-28
+}
+.about_description_top{
+    @apply flex gap-20 
+}
+.about_description_top h2{
+    @apply text-7xl 
+}
+.about_description_top > p{
+    @apply  text-3xl opacity-50
+}
+.about_profile{
+    @apply   h-96 
+}
+.about_profile img{
+    @apply   w-full h-full size-9/12 object-cover rounded-2xl
+}

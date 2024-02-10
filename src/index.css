@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1460px;
+    width: 100%;
+    margin:  0 auto;
+    padding: 0 1.5rem;
+}
+.page_top{
+    @apply  text-white border-b-[1px]  border-b-white border-opacity-40 py-10;
+}
+.page_title{
+    @apply text-7xl my-4;
+}
+.page_subtitle{
+    @apply opacity-40;
+}

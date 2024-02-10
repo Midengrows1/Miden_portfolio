@@ -1,0 +1,33 @@
+.header{
+    @apply h-32  flex justify-between items-center text-white text-xl;
+}
+.header_right{
+    @apply flex gap-12 items-center ;
+}
+.header_logo{
+    @apply text-3xl text-[#FF9143];
+}
+.header_links{
+    @apply flex gap-12 ;
+}
+.header_links> * {
+  @apply  text-white opacity-50 hover:transition-all hover:text-[#FF9143] hover:opacity-100 hover:cursor-pointer relative;
+}
+.header_links> *::after{
+    content: '';
+    display: block;
+    width: 0%;
+    opacity: 0;
+    height: 0.2rem;
+    background-color: #FF9143;
+    position: absolute;
+    transition: width .4s ease-in-out, opacity .4s ease-in-out;
+}
+.header_links > *:hover::after {
+    opacity: 1;
+    width: 100%;
+}
+.header_button{
+    @apply  px-9 py-4 rounded-full border-2 opacity-50 inline-block bg-transparent hover:border-[#FF9143] hover:opacity-100 hover:scale-95 transition-all ;
+}
+

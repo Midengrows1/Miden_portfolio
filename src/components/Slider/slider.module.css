@@ -1,0 +1,21 @@
+.projects_swiper{
+    @apply h-full w-full  overflow-hidden;
+}
+.swiper_slide{
+    @apply bg-blue-800 ;
+}
+.swiper_slide img{
+    @apply w-full h-full object-fill; 
+}
+.prevBtn::after,
+.nextBtn::after{
+    content: '';
+    display: none;
+}
+.nextBtn{
+    @apply  text-[#FF9143]
+}
+
+.faleftLong,.farightLong{
+@apply text-[#FF9143];
+}

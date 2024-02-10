@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+.projects_top{
+    @apply  text-white border-b-[1px]  border-b-white border-opacity-40;
+}
+.projects_top > span{
+    @apply  pl-1
+}
+.projects_bottom{
+    @apply min-h-dvh h-max w-full overflow-hidden pt-10;
+}
+

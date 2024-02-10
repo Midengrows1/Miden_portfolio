@@ -1,0 +1,22 @@
+.projects_slider{
+    @apply w-5/12 h-full
+}
+.projects_item{
+    @apply w-full  flex  gap-14 h-96  p-2
+}
+.project_item_desc{
+    @apply w-full h-full;
+}
+.project_item_desc h4{
+    @apply text-3xl text-[#FF9143];
+
+}
+.project_item_desc p{
+    @apply text-2xl mt-2 text-white
+}
+.projects_item_links{
+    @apply flex flex-col-reverse text-white gap-3 mt-5
+}
+.projects_item_links li a{
+    @apply flex gap-2 items-center hover:text-[#FF9143] w-max; 
+}
