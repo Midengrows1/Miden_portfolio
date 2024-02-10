@@ -60,15 +60,14 @@
 
 }
 .second_right::after{
-    content: url('/public/img/Rectangle 362.png');
+    content: url('/img/Rectangle 362.png');
     display: inline-block;
     position: absolute;
     bottom: 20%;
     left: 12%;
-    /* background: url('/public/img/Rectangle 362.png'); */
 }
 .second_right::before{
-    content: url('/public/img/Rectangle 363.png');
+    content: url('/img/Rectangle 363.png');
     display: inline-block;
     position: absolute;
     top:15%;

@@ -57,7 +57,7 @@ const Home = () => {
               variants={imgVariant}
               className={s.smoke}
             >
-              <img src="/public/img/Vector 8.png" alt="" />
+              <img src="/img/Vector 8.png" alt="" />
             </motion.div>
           </AnimatePresence>
           <AnimatePresence>
@@ -106,7 +106,7 @@ const Home = () => {
             </Mbutton>
           </motion.div>
           <div className={s.second_right}>
-            <img src="/public/img/MYFace2.jpg" alt="" />
+            <img src="/img/MYFace2.jpg" alt="" />
           </div>
         </motion.section>
         <section className={s.third_screen}>
@@ -184,7 +184,7 @@ const Home = () => {
           >
             <Contact variants={showTitle} mainClass={s.def_btn}></Contact>
             <div className={s.contact_img}>
-              <img src="/public/img/undraw_fill_form_re_cwyf.svg" alt="" />
+              <img src="/img/undraw_fill_form_re_cwyf.svg" alt="" />
             </div>
           </motion.div>
         </section>

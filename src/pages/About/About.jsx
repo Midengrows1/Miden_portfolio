@@ -38,9 +38,6 @@ const About = () => {
           <h1 className="  page_title">About me</h1>
           <span className="page_subtitle">Little Brief About Myself</span>
         </div>
-        {/* <div className={s.about_profile}>
-          <img src="/public/img/MYFace2.jpg" alt="" />
-        </div> */}
       </motion.section>
       <section className={s.about_description}>
         <motion.div
