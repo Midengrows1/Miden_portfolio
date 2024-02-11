@@ -1,17 +1,14 @@
-/* .container{
-    max-width: 1460px;
-    width: 100%;
-    margin:  0 auto;
-    padding: 0 1.5rem;
-} */
+.home{
+    
+}
 .first_screen{
-    @apply min-h-[50rem] flex flex-col justify-center items-center text-white relative;
+    @apply sm:min-h-[50rem] h-max flex flex-col sm:justify-center sm:items-center mt-10 text-white relative;
 }
 .first_screen_content{
-    @apply h-auto  flex flex-col justify-center items-center text-white;
+    @apply h-auto  sm:flex sm:flex-col sm:justify-center sm:items-center text-white;
 }
 .first_screen_content > h1{
-    @apply text-7xl w-7/12 text-center relative;
+    @apply sm:text-7xl sm:w-7/12 text-left  text-5xl relative ;
 }
 .def_btn{
     @apply px-7 py-7 bg-[#FF9143] rounded-full my-10 cursor-pointer transition-all ease-linear  ;
@@ -25,10 +22,10 @@
     color: #000;
 }
 .smoke{
-    @apply w-4/12 h-[15rem] absolute  right-32 top-20 ;
+    @apply w-4/12 h-[15rem] hidden absolute  right-32 top-20 lg:block;
 }
 .smoke img{
-    object-fit:cover;
+    object-fit:scale-down;
     width: 160%;
     height: 160%;
 }

@@ -71,9 +71,8 @@ const Home = () => {
               className={s.first_screen_content}
             >
               <h1 initial="hidden">
-                Your web, crafted by my code. Leave a mark in the online realm
+                Your web, crafted by my code. Leave a mark in the online realm.
               </h1>
-
               <Button mainClass={s.def_btn}>
                 <Link to={"/projects"}>
                   Explore works <FontAwesomeIcon icon={faArrowRightLong} />

@@ -5,13 +5,25 @@
     @apply flex gap-12 items-center ;
 }
 .header_logo{
-    @apply text-3xl text-[#FF9143];
+    @apply text-6xl w-12 text-[#FF9143] text-ellipsis overflow-hidden md:w-max;
 }
 .header_links{
-    @apply flex gap-12 ;
+    @apply flex hidden sm:gap-12   ;
 }
+.header_aside{
+    @apply  flex w-full items-center justify-between text-white  border p-4 gap-5;
+}
+.header_links_burger{
+    @apply flex  gap-8 w-full items-center  
+}
+.header_links_burger >*{
+    @apply text-nowrap  text-xl
+}
+.burger_button{
+    @apply  block rounded-full px-5 py-3 border-2 opacity-50  bg-transparent hover:text-[#FF9143] hover:opacity-100 hover:cursor-pointer;
+} 
 .header_links> * {
-  @apply  text-white opacity-50 hover:transition-all hover:text-[#FF9143] hover:opacity-100 hover:cursor-pointer relative;
+  @apply  text-white whitespace-nowrap opacity-50 hover:transition-all hover:text-[#FF9143] hover:opacity-100 hover:cursor-pointer relative;
 }
 .header_links> *::after{
     content: '';
@@ -28,6 +40,40 @@
     width: 100%;
 }
 .header_button{
-    @apply  px-9 py-4 rounded-full border-2 opacity-50 inline-block bg-transparent hover:border-[#FF9143] hover:opacity-100 hover:scale-95 transition-all ;
+    @apply  px-9 py-4 hidden sm:inline-block  rounded-full border-2 opacity-50  bg-transparent hover:border-[#FF9143] hover:opacity-100 hover:scale-95 transition-all ;
 }
+.header_burger{
+    @apply w-12 h-10  flex flex-col gap-2 relative;
+}
+.header_burger span{
+    @apply w-full h-[7px]  bg-white relative top-[50%] transform translate-y-[-50%];
 
+}
+.header_burger span::before{
+    content:'';
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: inherit;
+    position: absolute;
+    top:-190%;
+    
+}
+.header_burger span::after{
+    content:'';
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: inherit;
+    position: absolute;
+    top:190%;
+    
+}
+/* .header_burger span::before{
+    @apply  after:content-['*'] w-full h-5 bg-black block bottom-0 ;
+
+}
+.header_burger span::after{
+    @apply w-full  bg-red-400 block ;
+
+} */
