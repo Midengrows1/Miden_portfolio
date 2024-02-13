@@ -1,14 +1,14 @@
 .projects_slider{
-    @apply w-5/12 h-full
+    @apply md:w-5/12 md:h-full
 }
 .projects_item{
-    @apply w-full  flex  gap-14 h-96  p-2
+    @apply w-full  md:flex  gap-14 h-96  p-2
 }
 .project_item_desc{
     @apply w-full h-full;
 }
 .project_item_desc h4{
-    @apply text-3xl text-[#FF9143];
+    @apply text-3xl mt-10 md:mt-0 text-[#FF9143];
 
 }
 .project_item_desc p{
