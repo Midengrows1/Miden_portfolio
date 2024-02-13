@@ -1,14 +1,14 @@
-.home{
-    
+.wrapper{
+    @apply transition-all ease-linear duration-300;
 }
 .first_screen{
-    @apply sm:min-h-[50rem] h-max flex flex-col sm:justify-center sm:items-center mt-10 text-white relative;
+    @apply sm:min-h-[50rem] transition-all ease-linear duration-300 h-max flex flex-col sm:justify-center sm:items-center mt-5 text-white relative;
 }
 .first_screen_content{
     @apply h-auto  sm:flex sm:flex-col sm:justify-center sm:items-center text-white;
 }
 .first_screen_content > h1{
-    @apply sm:text-7xl sm:w-7/12 text-left  text-5xl relative ;
+    @apply sm:text-7xl sm:w-7/12  md:text-center text-left  text-5xl relative ;
 }
 .def_btn{
     @apply px-7 py-7 bg-[#FF9143] rounded-full my-10 cursor-pointer transition-all ease-linear  ;
@@ -32,7 +32,7 @@
 /* 2 Screen */
 
 .second_screen{
-    @apply h-dvh py-20 flex gap-10;
+    @apply md:h-dvh lg:py-20 md:flex lg:gap-10;
 }
 .second_screen > * {
     @apply flex-[50%] h-full  flex flex-col  justify-center text-white  ;
@@ -44,39 +44,44 @@
     @apply text-lg opacity-50
 }
 .def_title{
-    @apply text-6xl w-8/12;
+    @apply md:text-6xl md:w-8/12 w-full text-6xl;
 }
 .second_left button{
     @apply w-max px-6 py-4 font-Rubik
 }
 .second_right{
-    @apply flex flex-col items-center relative;
+    @apply  md:w-[50%] w-full flex-col items-center ;
+}
+.second_right_img_container{
+    @apply md:w-[400px] md:h-[420px] w-full h-[420px] flex-none  flex items-center justify-center   relative
 }
 .second_right img{
-    @apply object-cover size-8/12 rounded-2xl ;
+    @apply object-cover h-[95%] size-11/12 rounded-2xl ;
 
 }
-.second_right::after{
+.second_right_img_container::after{
     content: url('/img/Rectangle 362.png');
     display: inline-block;
     position: absolute;
-    bottom: 20%;
-    left: 12%;
+    /* bottom: 20%;
+    left: 12%; */
+    left: 0;
+    bottom: 5%;
 }
-.second_right::before{
+.second_right_img_container::before{
     content: url('/img/Rectangle 363.png');
     display: inline-block;
     position: absolute;
-    top:15%;
-    right: 18%;
+    top:0;
+    right: 7%;
 
 }
 /* Third screen */
 .third_screen{
-@apply w-full  justify-between; 
+@apply w-full  justify-between  mt-20; 
 }
 .third_screen_content{
-    @apply flex my-14
+    @apply md:flex my-14
 }
 .third_screen_content > *{
     @apply flex-1 
@@ -90,8 +95,11 @@
 .third_screen strong{
     @apply  text-[#FF9143]; 
 }
+.third_screen_left{
+    @apply flex flex-col
+}
 .third_screen_stack{
-    @apply flex w-full gap-4 px-4
+    @apply md:flex w-full gap-4 px-4
 }
 .third_screen_stack >*{
     @apply flex flex-col flex-auto h-max gap-2
@@ -102,9 +110,9 @@
 .third_screen_stack > * li img{
     @apply w-3/12 h-3/6 object-scale-down;
 }
-.third_screen_left_stack > * img{
+/* .third_screen_left_stack > * img{
     @apply  h-full object-cover;
-}
+} */
 .third_screen_description p{
     @apply text-3xl font-Rubik italic text-white opacity-50 leading-relaxed ;
 }

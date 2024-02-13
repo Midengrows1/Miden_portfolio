@@ -7,18 +7,18 @@ import { motion, AnimatePresence } from "framer-motion";
 const Header = () => {
   const showTitle = {
     hidden: {
-      y: -100,
+      height: 0,
       opacity: 0,
     },
     visible: {
-      y: 0,
+      height: "auto",
       opacity: 1,
     },
   };
   const [menuactive, setMenuActive] = useState(false);
   console.log(menuactive);
   return (
-    <div>
+    <div className={s.header_container}>
       <div className={clsx(s.header, "font-Syne")}>
         <div className={s.header_left}>
           <h1 className={s.header_logo}>Midengrows</h1>
@@ -38,7 +38,7 @@ const Header = () => {
             </ul>
           </nav>
           <div
-            className={s.header_burger}
+            className={clsx(s.header_burger, { [s.burger_active]: menuactive })}
             onClick={() => setMenuActive(!menuactive)}
           >
             <span></span>
@@ -46,13 +46,14 @@ const Header = () => {
           <Button mainClass={s.header_button}>Contact</Button>
         </div>
       </div>
+
       <AnimatePresence initial={false}>
         {menuactive && (
           <motion.div
             initial="hidden"
             animate="visible"
             variants={showTitle}
-            exit={{ opacity: 0, y: -100 }}
+            exit={{ opacity: 0, height: 0 }}
             transition={{
               ease: "easeInOut",
               duration: 0.7,
@@ -61,8 +62,7 @@ const Header = () => {
               damping: 10,
             }}
             style={{ overflow: "hidden" }}
-            className={s.header_aside}
-            custom={1}
+            className={clsx(s.header_aside)}
           >
             <nav>
               <ul className={s.header_links_burger}>
@@ -75,9 +75,9 @@ const Header = () => {
                 <li>
                   <NavLink to={"/projects"}>My works</NavLink>
                 </li>
+                <Button mainClass={clsx(s.burger_button)}>Contact</Button>
               </ul>
             </nav>
-            <Button mainClass={clsx(s.burger_button)}>Contact</Button>
           </motion.div>
         )}
       </AnimatePresence>

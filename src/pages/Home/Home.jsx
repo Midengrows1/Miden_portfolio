@@ -105,7 +105,9 @@ const Home = () => {
             </Mbutton>
           </motion.div>
           <div className={s.second_right}>
-            <img src="/img/MYFace2.jpg" alt="" />
+            <div className={s.second_right_img_container}>
+              <img src="/img/MYFace2.jpg" alt="" />
+            </div>
           </div>
         </motion.section>
         <section className={s.third_screen}>
