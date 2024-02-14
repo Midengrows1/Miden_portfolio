@@ -16,7 +16,7 @@ const Header = () => {
     },
   };
   const [menuactive, setMenuActive] = useState(false);
-  console.log(menuactive);
+  // console.log(menuactive);
   return (
     <div className={s.header_container}>
       <div className={clsx(s.header, "font-Syne")}>

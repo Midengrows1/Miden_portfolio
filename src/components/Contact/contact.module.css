@@ -1,9 +1,6 @@
 .form_contact{
-    @apply w-9/12 flex  h-max gap-5 text-white font-Syne flex-wrap ;
+    @apply md:w-9/12 flex  h-max gap-5 text-white font-Syne flex-wrap ;
 }
- /* input,textara{
-    @apply  w-full p-4 outline-none bg-transparent border-b border-white opacity-50 focus:border-[#FF9143] focus:opacity-100 ;
-} */
 .form_contact > div{
     @apply flex flex-col flex-1 p-3;
 }
@@ -32,4 +29,7 @@
 
 .form_input:focus + .form_label {
     @apply -top-4 left-0  text-sm
+}
+.active_input{
+    @apply -top-4 left-0  text-sm;
 }

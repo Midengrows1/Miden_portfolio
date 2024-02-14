@@ -2,13 +2,13 @@
     @apply transition-all ease-linear duration-300;
 }
 .first_screen{
-    @apply sm:min-h-[50rem] transition-all ease-linear duration-300 h-max flex flex-col sm:justify-center sm:items-center mt-5 text-white relative;
+    @apply lg:min-h-[50rem] transition-all ease-linear duration-300 h-max flex flex-col sm:justify-center sm:items-center mt-5 text-white relative;
 }
 .first_screen_content{
     @apply h-auto  sm:flex sm:flex-col sm:justify-center sm:items-center text-white;
 }
 .first_screen_content > h1{
-    @apply sm:text-7xl sm:w-7/12  md:text-center text-left  text-5xl relative ;
+    @apply sm:text-7xl md:w-7/12  md:text-center  sm:text-left  text-5xl relative ;
 }
 .def_btn{
     @apply px-7 py-7 bg-[#FF9143] rounded-full my-10 cursor-pointer transition-all ease-linear  ;
@@ -35,7 +35,7 @@
     @apply md:h-dvh lg:py-20 md:flex lg:gap-10;
 }
 .second_screen > * {
-    @apply flex-[50%] h-full  flex flex-col  justify-center text-white  ;
+    @apply flex-[50%] lg:h-full  flex flex-col  justify-center text-white  ;
 }
 .second_left_content{
     @apply  flex  flex-col gap-10;
@@ -44,13 +44,13 @@
     @apply text-lg opacity-50
 }
 .def_title{
-    @apply md:text-6xl md:w-8/12 w-full text-6xl;
+    @apply md:text-6xl lg:w-8/12 w-full text-6xl;
 }
 .second_left button{
     @apply w-max px-6 py-4 font-Rubik
 }
 .second_right{
-    @apply  md:w-[50%] w-full flex-col items-center ;
+    @apply  lg:w-[50%] w-full flex-col items-center ;
 }
 .second_right_img_container{
     @apply md:w-[400px] md:h-[420px] w-full h-[420px] flex-none  flex items-center justify-center   relative
@@ -117,7 +117,7 @@
     @apply text-3xl font-Rubik italic text-white opacity-50 leading-relaxed ;
 }
 .contact_form{
-    @apply flex  h-max mt-10 py-4;
+    @apply md:flex  h-max mt-10 py-4;
 }
 .contact_img{
     @apply w-full h-72 ;

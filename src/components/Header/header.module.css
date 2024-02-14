@@ -3,7 +3,7 @@
     @apply h-32  flex justify-between items-center text-white text-xl;
 }
 .header_right{
-    @apply flex gap-12 items-center ;
+    @apply md:flex gap-12 items-center ;
 }
 .header_logo{
     @apply text-6xl md:text-4xl w-12 text-[#FF9143] text-ellipsis overflow-hidden md:w-max;
@@ -41,13 +41,13 @@
     width: 100%;
 }
 .header_button{
-    @apply  px-9 py-4 hidden lg:inline-block  rounded-full border-2 opacity-50  bg-transparent hover:border-[#FF9143] hover:opacity-100 hover:scale-95 transition-all ;
+    @apply  px-9 py-4 hidden  md:inline-block  rounded-full border-2 opacity-50  bg-transparent hover:border-[#FF9143] hover:opacity-100 hover:scale-95 transition-all ;
 }
 .header_burger{
     @apply w-10 h-7 flex md:hidden z-50  justify-end items-center relative;
 }
 .header_burger > span{
-    @apply w-3/4 h-[5px] bg-white  scale-100;
+    @apply w-3/4 h-[5px] bg-white text-white  scale-100;
 
 }
 .header_burger::before, .header_burger::after{
@@ -78,10 +78,5 @@
     @apply scale-0;
 }
   
-/* .burger_active .header_burger span::after {
-    @apply top-0 rotate-45;
-}
-.burger_active .header_burger span::before {
-    @apply top-0 -rotate-45;
-} */
+
 

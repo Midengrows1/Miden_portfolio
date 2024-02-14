@@ -9,13 +9,13 @@ import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
 const Home = () => {
   const showText = {
     hidden: {
-      x: -100,
+      x: -80,
       opacity: 0,
     },
     visible: (custom) => ({
       x: 0,
       opacity: 1,
-      transition: { delay: custom * 0.2, duration: 0.5 },
+      transition: { delay: custom * 0.2, duration: 0.5, ease: "linear" },
     }),
   };
   const showTitle = {
@@ -118,7 +118,7 @@ const Home = () => {
             <motion.div
               initial="hidden"
               whileInView="visible"
-              viewport={{ amount: 0.3, once: true }}
+              viewport={{ amount: 0.5, once: true }}
               className={clsx(s.third_screen_stack, "font-Syne")}
             >
               <motion.ul
