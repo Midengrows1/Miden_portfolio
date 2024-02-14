@@ -10,6 +10,9 @@
     @apply  pl-1
 }
 .projects_bottom{
-    @apply min-h-dvh h-max w-full overflow-hidden pt-10;
+    @apply  flex flex-col justify-between gap-12 min-h-dvh h-max w-full overflow-hidden py-10;
 }
 
+.projects_item_links{
+    @apply cursor-pointer
+}

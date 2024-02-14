@@ -2,10 +2,17 @@
     @apply md:w-5/12 md:h-full
 }
 .projects_item{
-    @apply w-full  md:flex  gap-14 h-96  p-2
+    @apply w-full   md:flex  gap-14 md:min-h-96  h-max p-2 md:mt-2
 }
+/* .projects_item >*{
+    @apply flex-[50%]
+} */
+.projects_slider{
+    @apply flex-[20%] 
+}
+
 .project_item_desc{
-    @apply w-full h-full;
+    @apply w-full h-full flex-[30%];
 }
 .project_item_desc h4{
     @apply text-3xl mt-10 md:mt-0 text-[#FF9143];

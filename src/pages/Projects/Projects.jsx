@@ -4,7 +4,10 @@ import { Header, Myprod } from "@components";
 import { Mmyprod } from "../../components/Myprod/Myprod";
 import { motion } from "framer-motion";
 import clsx from "clsx";
+import { Slides } from "../../Slides";
+
 const Projects = () => {
+  console.log(Slides);
   return (
     <div className={clsx(s.work, "container", "font-Rubik")}>
       <Header></Header>
@@ -27,21 +30,32 @@ const Projects = () => {
         <span className="page_subtitle">Showcase About Works</span>
       </motion.section>
       <motion.section className={s.projects_bottom}>
-        <Mmyprod
-          initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{
-            duration: 1,
-            delay: 0.9,
-            ease: "linear",
-            scale: {
-              type: "spring",
-              damping: 5,
-              stiffness: 100,
-              restDelta: 0.001,
-            },
-          }}
-        ></Mmyprod>
+        {Slides.map((i, index) => {
+          const { text, title, images, sourcelink, pagelink } = Slides[index];
+          return (
+            <Mmyprod
+              key={index}
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{
+                duration: 1,
+                delay: 0.9,
+                ease: "linear",
+                scale: {
+                  type: "spring",
+                  damping: 5,
+                  stiffness: 100,
+                  restDelta: 0.001,
+                },
+              }}
+              text={text}
+              title={title}
+              sourceLink={sourcelink}
+              prodLink={pagelink}
+              images={images}
+            ></Mmyprod>
+          );
+        })}
       </motion.section>
     </div>
   );

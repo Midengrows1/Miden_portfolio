@@ -2,7 +2,7 @@
     @apply h-full w-full  overflow-hidden;
 }
 .swiper_slide{
-    @apply bg-blue-800 ;
+    @apply bg-red-600 ;
 }
 .swiper_slide img{
     @apply w-full h-full object-fill; 
@@ -18,4 +18,7 @@
 
 .faleftLong,.farightLong{
 @apply text-[#FF9143];
+}
+.slider_img{
+    @apply bg-red-600 w-full h-full;
 }
