@@ -1,5 +1,5 @@
 .form_contact{
-    @apply md:w-9/12 flex  h-max gap-5 text-white font-Syne flex-wrap ;
+    @apply md:w-9/12 sm:flex  h-max gap-5 text-white font-Syne flex-wrap ;
 }
 .form_contact > div{
     @apply flex flex-col flex-1 p-3;
